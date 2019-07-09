@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2019-07-08 17:41:18
+Date: 2019-07-09 17:10:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -458,6 +458,24 @@ INSERT INTO `xyb_auth_rule` VALUES ('173', '1', 'Admin', 'admin_url', 'Admin/Bas
 INSERT INTO `xyb_auth_rule` VALUES ('174', '1', 'Admin', 'admin_url', 'Admin/BasicSet/time_table', '', '作息时间', '');
 INSERT INTO `xyb_auth_rule` VALUES ('175', '1', 'Admin', 'admin_url', 'Admin/BasicSet/course_info', '', '课程信息', '');
 INSERT INTO `xyb_auth_rule` VALUES ('176', '1', 'Admin', 'admin_url', 'Admin/BasicSet/teach_info', '', '任教信息', '');
+
+-- ----------------------------
+-- Table structure for xyb_class_set
+-- ----------------------------
+DROP TABLE IF EXISTS `xyb_class_set`;
+CREATE TABLE `xyb_class_set` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `class_name` varchar(50) NOT NULL COMMENT '班级名字',
+  `add_time` int(11) NOT NULL DEFAULT '0' COMMENT '添加时间',
+  `class_director` varchar(30) NOT NULL COMMENT '班主任',
+  `class_teacher` varchar(255) NOT NULL COMMENT '任课教师',
+  PRIMARY KEY (`id`),
+  KEY `class_name` (`class_name`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of xyb_class_set
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for xyb_comment
@@ -1032,7 +1050,7 @@ CREATE TABLE `xyb_user` (
 -- ----------------------------
 -- Records of xyb_user
 -- ----------------------------
-INSERT INTO `xyb_user` VALUES ('1', '1', '0', '0', '1562577532', '0', '0', '0.00', '1562552887', '1', 'admin', '###b2621159a2a1393df2017c940f7c243e', 'admin', '794863612@qq.com', '', '', '', '0.0.0.0', '', '', null);
+INSERT INTO `xyb_user` VALUES ('1', '1', '0', '0', '1562634465', '0', '0', '0.00', '1562552887', '1', 'admin', '###b2621159a2a1393df2017c940f7c243e', 'admin', '794863612@qq.com', '', '', '', '0.0.0.0', '', '', null);
 
 -- ----------------------------
 -- Table structure for xyb_user_action
