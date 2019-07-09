@@ -1,0 +1,60 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li><a href="{:url('BasicSet/time_table')}">作息列表</a></li>
+        <li class="active"><a href="{:url('BasicSet/add_node_time')}">添加节次</a></li>
+    </ul>
+    <form method="post" class="form-horizontal js-ajax-form margin-top-20" action="{:url('BasicSet/addNodePost')}">
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>时令段</label>
+            <div class="col-md-6 col-sm-10">
+                <select>
+                    <option>夏时令</option>
+                    <option>冬时令</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-name" class="col-sm-2 control-label"><span class="form-required">*</span>节次名称</label>
+            <div class="col-md-6 col-sm-10">
+                <input type="text" class="form-control" id="input-name" name="name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-remark" class="col-sm-2 control-label">开始时间</label>
+            <div class="col-md-6 col-sm-10">
+                <input class="form-control js-bootstrap-date" type="text" name="post[published_time]"
+                       id="input-remark">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input-remarks" class="col-sm-2 control-label">结束时间</label>
+            <div class="col-md-6 col-sm-10">
+                <input class="form-control js-bootstrap-date" type="text" name="post[published_time]"
+                       id="input-remarks">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">设为上课时段</label>
+            <div class="col-md-6 col-sm-10">
+                <label class="radio-inline">
+                    <input type="radio" name="status" value="1" checked="checked"> 是
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="status" value="0"> 否
+                </label>
+            </div>
+        </div>
+
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-primary js-ajax-submit">保存</button>
+            <a class="btn btn-default" href="{:url('BasicSet/class_info')}">返回</a>
+        </div>
+    </form>
+
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

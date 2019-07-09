@@ -1,10 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<include file="public@header"/>
 </head>
 <body>
-
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:url('BasicSet/class_info')}">班级列表</a></li>
+        <li><a href="{:url('BasicSet/add_class')}">添加班级</a></li>
+    </ul>
+    <form method="post" class="js-ajax-form margin-top-20">
+        <div class="table-actions">
+            <!--<button type="submit" class="btn btn-primary btn-sm js-ajax-submit">{:lang('SORT')}</button>-->
+        </div>
+        <table class="table table-hover table-bordered table-list">
+            <thead>
+            <tr>
+                <th width="50">标题</th>
+                <th>
+                    周一<br/>
+                    07-01
+                </th>
+                <th>周二<br/>
+                    07-02
+                </th>
+                <th>周三<br/>
+                    07-03
+                </th>
+                <th>周四<br/>
+                    07-04
+                </th>
+                <th>周五<br/>
+                    07-05
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="6" style="text-align: center">晨间锻炼(08:00-08:40)</td>
+            </tr>
+              <tr>
+                  <td>第一节08:40-09:20</td>
+                  <td>语文<br/>
+                      陈永忠
+                  </td>
+                  <td>科学<br/>
+                      刘晓东
+                  </td>
+                  <td>数学<br/>
+                      陈永忠
+                  </td>
+                  <td>语文<br/>
+                      陈永忠
+                  </td>
+                  <td>语文<br/>
+                      陈永忠
+                  </td>
+              </tr>
+              <tr>
+                  <td>第一节08:40-09:20</td>
+                  <td>语文<br/>
+                      陈永忠
+                  </td>
+                  <td>科学<br/>
+                      刘晓东
+                  </td>
+                  <td>数学<br/>
+                      陈永忠
+                  </td>
+                  <td>语文<br/>
+                      陈永忠
+                  </td>
+                  <td>语文<br/>
+                      陈永忠
+                  </td>
+              </tr>
+              <tr>
+                  <td>第一节08:40-09:20</td>
+                  <td>语文<br/>
+                      陈永忠
+                  </td>
+                  <td>科学<br/>
+                      刘晓东
+                  </td>
+                  <td>数学<br/>
+                      陈永忠
+                  </td>
+                  <td>语文<br/>
+                      陈永忠
+                  </td>
+                  <td>语文<br/>
+                      陈永忠
+                  </td>
+              </tr>
+            <tr>
+                <td colspan="6" style="text-align: center">午餐(11:50-12:30)</td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align: center">午休(12:30-13:40)</td>
+            </tr>
+            <tr>
+                <td>第一节08:40-09:20</td>
+                <td>语文<br/>
+                    陈永忠
+                </td>
+                <td>科学<br/>
+                    刘晓东
+                </td>
+                <td>数学<br/>
+                    陈永忠
+                </td>
+                <td>语文<br/>
+                    陈永忠
+                </td>
+                <td>语文<br/>
+                    陈永忠
+                </td>
+            </tr>
+            <tr>
+                <td>第一节08:40-09:20</td>
+                <td>语文<br/>
+                    陈永忠
+                </td>
+                <td>科学<br/>
+                    刘晓东
+                </td>
+                <td>数学<br/>
+                    陈永忠
+                </td>
+                <td>语文<br/>
+                    陈永忠
+                </td>
+                <td>语文<br/>
+                    陈永忠
+                </td>
+            </tr>
+            <tr>
+                <td>第一节08:40-09:20</td>
+                <td>语文<br/>
+                    陈永忠
+                </td>
+                <td>科学<br/>
+                    刘晓东
+                </td>
+                <td>数学<br/>
+                    陈永忠
+                </td>
+                <td>语文<br/>
+                    陈永忠
+                </td>
+                <td>语文<br/>
+                    陈永忠
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="table-actions">
+            <!--<button type="submit" class="btn btn-primary btn-sm js-ajax-submit">{:lang('SORT')}</button>-->
+        </div>
+    </form>
+    <ul class="pagination"></ul>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
 </body>
 </html>
